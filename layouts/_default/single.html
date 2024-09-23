@@ -29,6 +29,8 @@
   {{ end }}
   {{ partial "cover.html" . }}
 
+  {{ .Description | markdownify }}
+
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
     <div class="table-of-contents">
       <h2>

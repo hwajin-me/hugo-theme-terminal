@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Code:wght@400;700&display=swap");
 
 :root {
-  --background: #1a170f;
-  --foreground: #eceae5;
-  --accent: #eec35e;
+  --background: #000000;
+  --foreground: #fbfbfb;
+  --accent: #dbdbdb;
   --font-size: 1rem;
   --line-height: 1.54rem;
-  --radius: 0px;
+  --radius: 0pxpx;
 }
 
 html {
