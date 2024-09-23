@@ -34,11 +34,10 @@
   {{ end }}
   {{ partial "cover.html" . }}
 
-  <div class="post-description">
-    {{ .Description | markdownify }}
-  </div>
-
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
+    <div class="post-description">
+      {{ .Description | markdownify }}
+    </div>
     <div class="table-of-contents">
       <h2>
         {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}

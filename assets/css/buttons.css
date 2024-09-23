@@ -88,6 +88,11 @@ a.button.inline.next::after {
   content: "] →"
 }
 
+a.read-more {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
 a.read-more,
 a.read-more:hover,
 a.read-more:active {
