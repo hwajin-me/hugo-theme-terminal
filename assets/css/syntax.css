@@ -1,4 +1,4 @@
-/* _syntax.scss */
+_syntax.scss
 code.language-css,
 code.language-scss,
 .token.boolean,
@@ -18,7 +18,6 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-  color: var(--accent) !important;
 }
 
 .token.tag-id,
@@ -34,7 +33,6 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: color-mix(in srgb, var(--accent) 70%, transparent) !important;
 }
 
 .token.property,
@@ -44,20 +42,17 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span::before {
-  color: var(--accent) !important;
 }
 
 .token.selector,
 .token.tag,
 .token.punctuation {
-  color: color-mix(in srgb, var(--accent) 50%, var(--foreground)) !important;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: color-mix(in srgb, var(--foreground) 30%, transparent) !important;
 }
 
 .token.namespace {
@@ -95,7 +90,6 @@ pre[class*=language-] {
   min-width: 1em;
   padding: 0 0.5em;
   background-color: color-mix(in srgb, var(--foreground) 40%, transparent);
-  color: var(--foreground);
   font: bold 65%/1.5 sans-serif;
   text-align: center;
   vertical-align: 0.3em;
