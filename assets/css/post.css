@@ -26,6 +26,15 @@
   padding: 40px 0;
 }
 
+.post-description {
+  font-size: 0.9rem;
+  color: rgba(var(--accent), 0.8);
+}
+
+.post-description-margin{
+  margin-bottom: 1.7rem;
+}
+
 .post:not(:last-of-type) {
   border-bottom: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
 }
@@ -136,6 +145,39 @@
   margin: 100px 0 20px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.comment {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.comment__title {
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+.comment__title-h {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 10px;
+  background: var(--background);
+  color: color-mix(in srgb var(--foreground) 30%, transparent);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  z-index: 1;
+}
+
+.comment__title hr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 15px;
+  z-index: 0;
 }
 
 h1:hover .hanchor,

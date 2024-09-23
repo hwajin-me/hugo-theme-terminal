@@ -1,8 +1,8 @@
 {{- if isset .Site.Params "giscus" -}}
   {{- if and (isset .Site.Params.giscus "repo") (not (eq .Site.Params.giscus.repo "" )) (eq (.Params.disable_comments | default false) false) -}}
-  <div class="pagination">
-   <div class="pagination__title">
-     <span class="pagination__title-h">COMMENTS</span>
+  <div class="comment">
+   <div class="comment__title">
+     <span class="comment__title-h">COMMENTS</span>
      <hr />
    </div>
   </div>

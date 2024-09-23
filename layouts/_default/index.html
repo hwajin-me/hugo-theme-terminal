@@ -43,11 +43,11 @@
 
         {{ partial "cover.html" . }}
 
-        <div class="post-content">
+        <div class="post-description post-description-margin">
           {{ if .Params.showFullContent }}
             {{ .Content }}
           {{ else if .Description }}
-            <p>{{ .Description | markdownify }}</p>
+            {{ .Description | markdownify }}
           {{ else }}
             {{ .Summary }}
           {{ end }}
